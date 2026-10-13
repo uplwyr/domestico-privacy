@@ -1,96 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Domestico — Privacy Policy</title>
-<style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; color: #1f2937; line-height: 1.65; }
-  h1 { font-size: 28px; margin-bottom: 4px; }
-  .updated { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
-  h2 { font-size: 19px; margin-top: 36px; color: #111827; }
-  p, li { font-size: 15px; }
-  ul { padding-left: 22px; }
-  .note { background: #FFF7ED; border: 1px solid #FED7AA; border-radius: 10px; padding: 14px 16px; font-size: 14px; color: #9A3412; margin: 24px 0; }
-  code { background: #F3F4F6; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
-  a { color: #0284C7; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domestico – Gizlilik Politikası / Privacy Policy</title>
+  <meta name="description" content="Domestico gizlilik politikası. Domestico privacy policy.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png">
 </head>
 <body>
+<main>
+  <header>
+    <img src="logo.png" alt="Domestico">
+    <h1>Domestico</h1>
+  </header>
 
-<h1>Domestico — Privacy Policy</h1>
-<p class="updated">Last updated: [ENTER DATE, e.g. September 14, 2026]</p>
+  <nav class="lang-switch">
+    <a href="#tr">Türkçe</a>
+    <a href="#en">English</a>
+  </nav>
 
-<div class="note">
-  ⚠️ This is a draft. Fill in the bracketed <code>[ ]</code> placeholders (developer name, contact email, etc.) with your own information before publishing.
-</div>
+  <!-- ========================= TÜRKÇE ========================= -->
+  <section id="tr" lang="tr">
+    <h2>Gizlilik Politikası</h2>
+    <p class="muted">Son güncelleme: 14 Ekim 2026</p>
 
-<p>
-Domestico ("the app", "we", "us") is a mobile application that helps household members manage shared chores, shopping lists, and pantry/inventory tracking together. This privacy policy explains what data we collect, how it is used, and what rights you have.
-</p>
+    <p>Bu politika, <strong>UP LYR</strong> tarafından geliştirilen <strong>Domestico</strong> Android uygulamasının ("Uygulama") hangi verileri topladığını, nasıl kullandığını ve paylaştığını açıklar.</p>
 
-<h2>1. Who We Are</h2>
-<p>
-This app is developed by UP LYR. If you have any questions, you can reach us at <a href="mailto:[CONTACT EMAIL]">uplwyr@gmail.com</a>.
-</p>
+    <h3>1. Toplanan veriler</h3>
+    <table>
+      <tr><th>Veri</th><th>Ne zaman</th><th>Amaç</th></tr>
+      <tr><td>Ad, e-posta adresi, profil fotoğrafı bağlantısı</td><td>Google ile giriş yaptığınızda</td><td>Hesap yönetimi, hane üyelerine kim olduğunuzu göstermek</td></tr>
+      <tr><td>Görevler, alışveriş listeleri, alışveriş geçmişi (market adı, tutar), stok kayıtları</td><td>Uygulamayı kullandığınızda</td><td>Uygulamanın temel işlevi ve hane üyeleriyle senkronizasyon</td></tr>
+      <tr><td>Hatırlatma saatleri ve bildirim tercihi</td><td>Ayarları değiştirdiğinizde</td><td>Hatırlatma bildirimleri</td></tr>
+      <tr><td>Uygulama etkileşimleri, cihaz bilgileri, uygulama örneği kimliği</td><td>Otomatik (Firebase Analytics)</td><td>Kullanım istatistikleri ve uygulamanın iyileştirilmesi</td></tr>
+      <tr><td>Reklam kimliği, IP adresi, cihaz bilgileri</td><td>Otomatik (Google AdMob)</td><td>Reklam gösterimi, ölçüm ve kötüye kullanımın önlenmesi</td></tr>
+    </table>
+    <p><strong>Misafir modu:</strong> Google hesabı olmadan devam ederseniz ad veya e-posta toplanmaz; anonim bir hesap oluşturulur.</p>
 
-<h2>2. Data We Collect</h2>
-<ul>
-  <li><strong>Account information:</strong> When you sign in with Google, we receive your name, email address, and profile photo from your Google account.</li>
-  <li><strong>User content:</strong> The tasks, shopping lists, pantry/inventory items, and shopping history (receipts) you create.</li>
-  <li><strong>Household information:</strong> The invite code and membership details of the household you are connected to.</li>
-  <li><strong>Notification preferences:</strong> Your chosen reminder times and whether notifications are enabled.</li>
-  <li><strong>Technical data:</strong> Basic technical information automatically processed by our Firebase infrastructure to keep the app functioning properly (e.g. a device notification token).</li>
-</ul>
-<p>We do not collect sensitive data categories such as location, payment information, or health data.</p>
+    <h3>2. Verilerin saklanması</h3>
+    <p>Hesap ve hane verileriniz, Google'ın <strong>Firebase (Cloud Firestore)</strong> sunucularında saklanır. Veriler aktarım sırasında şifrelenir (HTTPS/TLS). Ayrıca çevrimdışı kullanım için verilerin bir kopyası cihazınızda tutulur.</p>
 
-<h2>3. How We Use Your Data</h2>
-<ul>
-  <li>To synchronize your tasks, shopping list, and inventory data in real time with the household members you are connected to.</li>
-  <li>To send reminder notifications at the times you choose.</li>
-  <li>To let you sign in securely and manage your household connection.</li>
-</ul>
-<p>Your data is never used for advertising and is never sold or rented to third parties.</p>
+    <h3>3. Verilerin paylaşılması</h3>
+    <ul>
+      <li><strong>Hane üyeleri:</strong> Davet koduyla aynı haneye katıldığınız kişiler adınızı, e-posta adresinizi, profil fotoğrafınızı ve hanenin görev/alışveriş/stok kayıtlarını görebilir.</li>
+      <li><strong>Hizmet sağlayıcılar:</strong> Google LLC (Firebase Authentication, Cloud Firestore, Firebase Analytics, Google AdMob, Google ile Giriş). Bu hizmetler verileri <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ve <a href="https://firebase.google.com/support/privacy">Firebase gizlilik koşulları</a> kapsamında işler.</li>
+      <li>Verilerinizi satmıyoruz.</li>
+    </ul>
 
-<h2>4. Data Sharing</h2>
-<p>
-Your content (tasks, shopping lists, inventory items) is only visible to the <strong>household members you connect with via invite code</strong>. Your data is stored and processed using <a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a> (Authentication and Cloud Firestore), which has its own privacy policy governing that infrastructure.
-</p>
+    <h3>4. Reklamlar ve onay</h3>
+    <p>Uygulama Google AdMob ile reklam gösterir. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki kullanıcılardan Google'ın onay aracıyla izin istenir. Tercihlerinizi uygulamada <strong>Menü → Gizlilik ve Güvenlik → Reklam Tercihleri</strong> bölümünden değiştirebilirsiniz. Kişiselleştirilmiş reklamları cihazınızın <strong>Ayarlar → Google → Reklamlar</strong> menüsünden de kapatabilirsiniz.</p>
 
-<h2>5. Data Retention and Deletion</h2>
-<p>
-Your data is retained for as long as your account is active. From within the app, you can:
-</p>
-<ul>
-  <li>Leave a household to end your access to that household's shared data.</li>
-  <li>Sign out of your account.</li>
-  <li>Request full deletion of your account and all associated data by contacting us at <a href="mailto:[CONTACT EMAIL]">uplwyr@gmail.com</a>. We will fulfill such requests within a reasonable time (no later than 30 days).</li>
-</ul>
+    <h3>5. Saklama süresi ve silme</h3>
+    <p>Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı ve verilerinizi istediğiniz zaman uygulama içinden (<strong>Menü → Gizlilik ve Güvenlik → Hesabımı ve Verilerimi Sil</strong>) ya da <a href="delete-account.html">hesap silme sayfası</a> üzerinden silebilirsiniz. Firebase Analytics verileri en fazla 14 ay saklanır.</p>
 
-<h2>6. Permissions</h2>
-<p>
-The app requests <strong>notification permission (POST_NOTIFICATIONS)</strong> from your device in order to show reminder notifications. You can revoke this permission at any time from your device settings.
-</p>
+    <h3>6. Haklarınız</h3>
+    <p>KVKK ve GDPR kapsamında verilerinize erişme, düzeltme, silme ve işlemeye itiraz etme haklarına sahipsiniz. Talepleriniz için uplwyr@gmail.com adresinden bize ulaşabilirsiniz.</p>
 
-<h2>7. Children's Privacy</h2>
-<p>
-Domestico is not directed at children under the age of 13, and we do not knowingly collect data from users in this age group.
-</p>
+    <h3>7. Çocuklar</h3>
+    <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bilerek bu yaştaki çocuklardan veri toplamaz.</p>
 
-<h2>8. Data Security</h2>
-<p>
-Your data is transmitted securely over HTTPS via the Google Firebase infrastructure. Household data can only be accessed by authenticated users who are members of that household.
-</p>
+    <h3>8. Değişiklikler</h3>
+    <p>Bu politika güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanır.</p>
 
-<h2>9. Changes to This Policy</h2>
-<p>
-We may update this privacy policy from time to time. If we make significant changes, we will notify you within the app or via this page.
-</p>
+    <h3>9. İletişim</h3>
+    <p>uplwyr@gmail.com</p>
+  </section>
 
-<h2>10. Contact Us</h2>
-<p>
-If you have questions about privacy, please contact: <a href="mailto:[CONTACT EMAIL]">uplwyr@gmail.com</a>
-</p>
+  <hr>
 
+  <!-- ========================= ENGLISH ========================= -->
+  <section id="en" lang="en">
+    <h2>Privacy Policy</h2>
+    <p class="muted">Last updated: October 14, 2026</p>
+
+    <p>This policy explains what data the <strong>Domestico</strong> Android app (the "App"), developed by <strong>UP LYR</strong>, collects, how it is used and how it is shared.</p>
+
+    <h3>1. Data we collect</h3>
+    <table>
+      <tr><th>Data</th><th>When</th><th>Purpose</th></tr>
+      <tr><td>Name, email address, profile photo link</td><td>When you sign in with Google</td><td>Account management, showing household members who you are</td></tr>
+      <tr><td>Tasks, shopping lists, shopping history (store name, amount), inventory records</td><td>When you use the App</td><td>Core functionality and syncing with household members</td></tr>
+      <tr><td>Reminder times and notification preference</td><td>When you change settings</td><td>Reminder notifications</td></tr>
+      <tr><td>App interactions, device information, app instance ID</td><td>Automatically (Firebase Analytics)</td><td>Usage statistics and improving the App</td></tr>
+      <tr><td>Advertising ID, IP address, device information</td><td>Automatically (Google AdMob)</td><td>Showing ads, measurement and fraud prevention</td></tr>
+    </table>
+    <p><strong>Guest mode:</strong> If you continue without a Google account, no name or email is collected; an anonymous account is created.</p>
+
+    <h3>2. Storage</h3>
+    <p>Your account and household data are stored on Google's <strong>Firebase (Cloud Firestore)</strong> servers. Data is encrypted in transit (HTTPS/TLS). A copy is also kept on your device for offline use.</p>
+
+    <h3>3. Sharing</h3>
+    <ul>
+      <li><strong>Household members:</strong> People who join your household with an invite code can see your name, email address, profile photo and the household's task/shopping/inventory records.</li>
+      <li><strong>Service providers:</strong> Google LLC (Firebase Authentication, Cloud Firestore, Firebase Analytics, Google AdMob, Sign in with Google). These services process data under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a>.</li>
+      <li>We do not sell your data.</li>
+    </ul>
+
+    <h3>4. Ads and consent</h3>
+    <p>The App shows ads through Google AdMob. Users in the European Economic Area, the UK and Switzerland are asked for consent through Google's consent tool. You can change your choices in the App under <strong>Menu → Privacy &amp; Security → Ad Preferences</strong>. You can also opt out of personalized ads in your device's <strong>Settings → Google → Ads</strong>.</p>
+
+    <h3>5. Retention and deletion</h3>
+    <p>Your data is kept while your account is active. You can delete your account and data at any time inside the App (<strong>Menu → Privacy &amp; Security → Delete My Account and Data</strong>) or via the <a href="delete-account.html">account deletion page</a>. Firebase Analytics data is retained for up to 14 months.</p>
+
+    <h3>6. Your rights</h3>
+    <p>Under GDPR and similar laws you have the right to access, correct, delete and object to the processing of your data. Contact us at uplwyr@gmail.com.</p>
+
+    <h3>7. Children</h3>
+    <p>The App is not directed to children under 13 and does not knowingly collect data from them.</p>
+
+    <h3>8. Changes</h3>
+    <p>This policy may be updated. The current version is always published on this page.</p>
+
+    <h3>9. Contact</h3>
+    <p>uplwyr@gmail.com</p>
+  </section>
+
+  <footer>© 2026 Domestico · <a href="delete-account.html">Hesap Silme / Account Deletion</a></footer>
+</main>
 </body>
 </html>
